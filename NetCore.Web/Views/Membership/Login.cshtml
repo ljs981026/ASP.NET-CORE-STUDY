@@ -1,0 +1,31 @@
+﻿<!-- ViewModel 선언 -->
+@model LoginInfo
+@{
+    ViewData["Title"] = "멤버십 로그인";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="Post" asp-controller="Membership" asp-action="Login" onsubmit="btnLogin.disabled = true; return true;"> <!-- 중복 클릭 방지 -->
+            <!-- asp-validation-summary:모든 에러 메시지를 요약해서 한꺼번에 보여줌 -->
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div class="form-group">
+                @Html.DisplayNameFor(m => m.UserId)
+                <!-- aps-for: 모델 속성을 Razor 태그와 바인딩해주는 Tag Helper -->
+                <!-- asp-validation-for: 특정 모델 속성의 Validation 에러 메시지 출력용 Tag Helper -->
+                <input type="text" class="form-control" asp-for="UserId" placeholder="User id" autofocus /> 
+                <span class="text-danger" asp-validation-for="UserId"></span>
+            </div>
+            <div class="form-group">
+                @Html.DisplayNameFor(m => m.Password)
+                <input type="password" class="form-control" asp-for="Password" placeholder="Password" />
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <button type="submit" name="btnLogin" class="btn btn-lg btn-success btn-block">멤버십 로그인</button>
+        </form>
+    </div>
+</div>
+
