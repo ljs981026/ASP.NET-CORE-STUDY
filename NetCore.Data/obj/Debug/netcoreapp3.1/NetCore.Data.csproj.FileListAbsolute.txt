@@ -1,0 +1,10 @@
+D:\Lecture\NetCore\NetCore.Data\bin\Debug\netcoreapp3.1\NetCore.Data.deps.json
+D:\Lecture\NetCore\NetCore.Data\bin\Debug\netcoreapp3.1\NetCore.Data.dll
+D:\Lecture\NetCore\NetCore.Data\bin\Debug\netcoreapp3.1\NetCore.Data.pdb
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.csproj.AssemblyReference.cache
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.AssemblyInfoInputs.cache
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.AssemblyInfo.cs
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.csproj.CoreCompileInputs.cache
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.dll
+D:\Lecture\NetCore\NetCore.Data\obj\Debug\netcoreapp3.1\NetCore.Data.pdb

@@ -1,0 +1,13 @@
+D:\Lecture\NetCore\NetCore.Services\bin\Debug\netcoreapp3.1\NetCore.Services.deps.json
+D:\Lecture\NetCore\NetCore.Services\bin\Debug\netcoreapp3.1\NetCore.Services.dll
+D:\Lecture\NetCore\NetCore.Services\bin\Debug\netcoreapp3.1\NetCore.Services.pdb
+D:\Lecture\NetCore\NetCore.Services\bin\Debug\netcoreapp3.1\NetCore.Data.dll
+D:\Lecture\NetCore\NetCore.Services\bin\Debug\netcoreapp3.1\NetCore.Data.pdb
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.csproj.AssemblyReference.cache
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.AssemblyInfoInputs.cache
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.AssemblyInfo.cs
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.csproj.CoreCompileInputs.cache
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.csproj.CopyComplete
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.dll
+D:\Lecture\NetCore\NetCore.Services\obj\Debug\netcoreapp3.1\NetCore.Services.pdb

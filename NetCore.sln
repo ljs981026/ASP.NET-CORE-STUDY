@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Web", "NetCore.Web\NetCore.Web.csproj", "{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Web", "NetCore.Web\NetCore.Web.csproj", "{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Services", "NetCore.Services\NetCore.Services.csproj", "{D2FE18B6-9491-48D3-8D16-55CE4628249B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Data", "NetCore.Data\NetCore.Data.csproj", "{DAC621DE-8C71-411C-821F-B9B7704C7903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2FE18B6-9491-48D3-8D16-55CE4628249B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2FE18B6-9491-48D3-8D16-55CE4628249B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2FE18B6-9491-48D3-8D16-55CE4628249B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2FE18B6-9491-48D3-8D16-55CE4628249B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
