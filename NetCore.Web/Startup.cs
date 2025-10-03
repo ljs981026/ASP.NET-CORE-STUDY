@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using NetCore.Services.Data;
 
 namespace NetCore.Web
 {
@@ -25,10 +27,15 @@ namespace NetCore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // юга╦╪╨ ажютю╩ ╩Г©Кго╠Б ю╖гь╪╜ ╪╜╨Я╫╨╥н ╣Н╥огт
-            // ╡╝╣╔╠Б             Ё╩©К╧╟
-            // IUser юнемфДюл╫╨©║ UserService е╛╥║╫╨ юн╫╨ео╫╨╦╕ ажют
+            // О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫о╠О©╫ О©╫О©╫О©╫ь╪О©╫ О©╫О©╫О©╫Я╫╨╥О©╫ О©╫О©╫О©╫О©╫О©╫
+            // О©╫О©╫О©╫О©╫О©╫О©╫             О©╫О©╫О©╫К╧╟
+            // IUser О©╫О©╫О©╫О©╫О©╫О©╫О©╫л╫О©╫О©╫О©╫ UserService е╛О©╫О©╫О©╫О©╫ О©╫н╫О©╫О©╫о╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫
             services.AddScoped<IUser, UserService>();
+            // db Л═▒Л├█Л═∙КЁ╢, К╖┬Л²╢Й╥╦К═┬Л²╢Л┘≤Л┼╓ М■└К║°Л═²М┼╦ Л╖─Л═∙
+            services.AddDbContext<CodeFirstDbContext>(options =>
+                options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection"),
+                    sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName: "NetCore.Services")));
+
             services.AddControllersWithViews();
         }
 

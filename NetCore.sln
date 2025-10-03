@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Services", "NetCore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Data", "NetCore.Data\NetCore.Data.csproj", "{DAC621DE-8C71-411C-821F-B9B7704C7903}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Migrations", "NetCore.Migrations\NetCore.Migrations.csproj", "{A274A4E5-A315-44DA-B963-D10390E0F339}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAC621DE-8C71-411C-821F-B9B7704C7903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A274A4E5-A315-44DA-B963-D10390E0F339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A274A4E5-A315-44DA-B963-D10390E0F339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A274A4E5-A315-44DA-B963-D10390E0F339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A274A4E5-A315-44DA-B963-D10390E0F339}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

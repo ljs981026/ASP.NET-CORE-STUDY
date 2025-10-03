@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lecture\\NetCore\\NetCore.Services\\NetCore.Services.csproj": {}
+    "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/NetCore.Services.csproj": {}
   },
   "projects": {
-    "D:\\Lecture\\NetCore\\NetCore.Data\\NetCore.Data.csproj": {
+    "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/NetCore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lecture\\NetCore\\NetCore.Data\\NetCore.Data.csproj",
+        "projectUniqueName": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/NetCore.Data.csproj",
         "projectName": "NetCore.Data",
-        "projectPath": "D:\\Lecture\\NetCore\\NetCore.Data\\NetCore.Data.csproj",
-        "packagesPath": "C:\\Users\\ljs98\\.nuget\\packages\\",
-        "outputPath": "D:\\Lecture\\NetCore\\NetCore.Data\\obj\\",
+        "projectPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/NetCore.Data.csproj",
+        "packagesPath": "/Users/jaeseok/.nuget/packages/",
+        "outputPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ljs98\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jaeseok/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,11 +32,23 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,47 +60,49 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Lecture\\NetCore\\NetCore.Services\\NetCore.Services.csproj": {
+    "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/NetCore.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lecture\\NetCore\\NetCore.Services\\NetCore.Services.csproj",
+        "projectUniqueName": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/NetCore.Services.csproj",
         "projectName": "NetCore.Services",
-        "projectPath": "D:\\Lecture\\NetCore\\NetCore.Services\\NetCore.Services.csproj",
-        "packagesPath": "C:\\Users\\ljs98\\.nuget\\packages\\",
-        "outputPath": "D:\\Lecture\\NetCore\\NetCore.Services\\obj\\",
+        "projectPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/NetCore.Services.csproj",
+        "packagesPath": "/Users/jaeseok/.nuget/packages/",
+        "outputPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ljs98\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jaeseok/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Lecture\\NetCore\\NetCore.Data\\NetCore.Data.csproj": {
-                "projectPath": "D:\\Lecture\\NetCore\\NetCore.Data\\NetCore.Data.csproj"
+              "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/NetCore.Data.csproj": {
+                "projectPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/NetCore.Data.csproj"
               }
             }
           }
@@ -105,11 +111,43 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -121,12 +159,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/RuntimeIdentifierGraph.json"
         }
       }
     }
