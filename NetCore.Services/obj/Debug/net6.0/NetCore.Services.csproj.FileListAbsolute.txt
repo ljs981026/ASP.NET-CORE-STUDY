@@ -1,0 +1,16 @@
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/bin/Debug/net6.0/NetCore.Services.deps.json
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/bin/Debug/net6.0/NetCore.Services.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/bin/Debug/net6.0/NetCore.Services.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/bin/Debug/net6.0/NetCore.Data.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/bin/Debug/net6.0/NetCore.Data.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.csproj.AssemblyReference.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.AssemblyInfoInputs.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.AssemblyInfo.cs
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.csproj.CoreCompileInputs.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.sourcelink.json
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore..F0A3CAE5.Up2Date
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/refint/NetCore.Services.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/NetCore.Services.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/obj/Debug/net6.0/ref/NetCore.Services.dll

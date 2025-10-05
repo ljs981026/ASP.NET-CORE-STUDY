@@ -11,9 +11,10 @@ using System;
 namespace NetCore.Services.Migrations
 {
     [DbContext(typeof(CodeFirstDbContext))]
-    partial class CodeFirstDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251005071021_AddingUserTable_UserEmailColumn_UniqueIndex")]
+    partial class AddingUserTable_UserEmailColumn_UniqueIndex
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

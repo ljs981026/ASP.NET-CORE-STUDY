@@ -37,7 +37,7 @@ namespace NetCore.Services.Data
             });
             
             // 인덱스 지정
-            modelBuilder.Entity<User>().HasIndex(c => new { c.UserEmail }); 
+            modelBuilder.Entity<User>().HasIndex(c => new { c.UserEmail }).IsUnique(unique: true); 
         }
     }
 }

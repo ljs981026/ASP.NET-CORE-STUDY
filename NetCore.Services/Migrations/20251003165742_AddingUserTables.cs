@@ -13,11 +13,11 @@ namespace NetCore.Services.Migrations
                 columns: table => new
                 {
                     UserId = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false),
-                    IsMembershipWithdrawn = table.Column<bool>(nullable: false, defaultValue: false),
-                    JoinedUtcDate = table.Column<DateTime>(nullable: false),
-                    Password = table.Column<string>(type: "varchar(130)", maxLength: 130, nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     UserEmail = table.Column<string>(type: "varchar(320)", maxLength: 320, nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
+                    Password = table.Column<string>(type: "varchar(130)", maxLength: 130, nullable: false),
+                    IsMembershipWithdrawn = table.Column<bool>(nullable: false, defaultValue: false),
+                    JoinedUtcDate = table.Column<DateTime>(nullable: false),                                       
                 },
                 constraints: table =>
                 {
