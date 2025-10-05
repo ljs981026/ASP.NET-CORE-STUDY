@@ -30,7 +30,9 @@ Day3
 3. Database-First 데이터베이스 작업 우선주의
 4. Entity Data Modeling 코드를 손쉽게 작성할 수 있도록 도와줌
 
-Code-First의 장점
+Code-First 
+
+장점
 1. Table과 Column을 Application에서 관리
 2. Migrations를 통한 이력관리
 
@@ -39,15 +41,18 @@ Code-First의 장점
 2. 운영서버에 바로 적용이 어려움
 
 Day4
+
 사용자 아이디는 기본키로 지정됨
 사용자 이메일은 유니크 인덱스로 지정됨
 그래서 중복체크할 때 사용자 목록 검색이 불필요
 소스코드에서 로깅을 하거나 예외사항 처리
 
 Database-First
+
 장점
 1. 데이터베이스 작업은 기존과 동일하게 수행가능
 2. Entity data modelling으로 손코딩 거의 없음
+   
 단점
 1. 데이터베이스 작업의 이력관리를 하지 못함
 2. 테이블 또는 컬럼변경시 c#코드도 수동변경
