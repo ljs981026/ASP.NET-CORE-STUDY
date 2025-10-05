@@ -32,9 +32,13 @@ namespace NetCore.Web
             // IUser �������̽��� UserService Ŭ���� �ν��Ͻ��� ����
             services.AddScoped<IUser, UserService>();
             // db 접속정보, 마이그레이션스 프로젝트 지정
-            services.AddDbContext<CodeFirstDbContext>(options =>
-                options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection"),
-                    sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName: "NetCore.Services")));
+            //services.AddDbContext<CodeFirstDbContext>(options =>
+            //    options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection"),
+            //        sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName: "NetCore.Services")));
+
+            services.AddDbContext<DBFirstDbContext>(options =>
+                options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DBFirstDBConnection")
+                ));
 
             services.AddControllersWithViews();
         }

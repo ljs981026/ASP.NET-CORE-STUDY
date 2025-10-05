@@ -1,5 +1,7 @@
-﻿using NetCore.Data.DataModels;
+﻿//using NetCore.Data.DataModels;
+using NetCore.Data.Classes;
 using NetCore.Data.ViewModels;
+using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,22 +13,30 @@ namespace NetCore.Services.Svcs
     // interface를 상속받은 후에 명시적으로 interface 구현
     public class UserService : IUser
     {
+        private DBFirstDbContext _context;
+
+        public UserService(DBFirstDbContext context)
+        {
+            _context = context;
+        }
+
         #region private methods
         // 내부에서만 사용
         private IEnumerable<User> GetUserInfos()
         {
+            return _context.Users.ToList();
             // 데이터 모델: 데이터베이스와 연동해서 작업하기 위한 모델
             // 뷰 모델: 뷰를 위한 모델
-            return new List<User>()
-            {
-                new User()
-                {
-                    UserId = "seokjs",
-                    UserName = "이재석",
-                    UserEmail = "ljs981026@naver.com",
-                    Password = "123456"
-                }
-            };
+            //return new List<User>()
+            //{
+            //    new User()
+            //    {
+            //        UserId = "seokjs",
+            //        UserName = "이재석",
+            //        UserEmail = "ljs981026@naver.com",
+            //        Password = "123456"
+            //    }
+            //};
         }
 
         private bool CheckTheUserInfo(string userId, string password)

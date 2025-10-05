@@ -1,0 +1,12 @@
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/bin/Debug/net6.0/NetCore.Databases.deps.json
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/bin/Debug/net6.0/NetCore.Databases.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/bin/Debug/net6.0/NetCore.Databases.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.csproj.AssemblyReference.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.AssemblyInfoInputs.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.AssemblyInfo.cs
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.csproj.CoreCompileInputs.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/refint/NetCore.Databases.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/ref/NetCore.Databases.dll

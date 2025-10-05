@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NetCore.Services/Svcs/UserService.cs">
+    <Files>
+      <File FileName="NetCore.Web/appsettings.json" Line="16" Column="1" />
+      <File FileName="NetCore.Web/Startup.cs" Line="44" Column="10" />
+      <File FileName="NetCore.Web/ScaffoldingReadMe.txt" Line="1" Column="1" />
+      <File FileName="NetCore.Web/Program.cs" Line="1" Column="1" />
+      <File FileName="NetCore.Services/Data/DBFirstDbContext.cs" Line="14" Column="55" />
+      <File FileName="NetCore.Services/Svcs/UserService.cs" Line="29" Column="1" />
+      <File FileName="NetCore.Services/Data/DBFirstDbContextFactory.cs" Line="22" Column="1" />
+      <File FileName="NetCore.Services/Config/DbConnector.cs" Line="20" Column="1" />
+      <File FileName="NetCore.Data/Classes/User.cs" Line="20" Column="2" />
+      <File FileName="NetCore.Services/Data/CodeFirstDbContextFactory.cs" Line="20" Column="2" NotebookId="1" />
+      <File FileName="NetCore.Services/Data/CodeFirstDbContext.cs" Line="27" Column="13" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NetCore" expanded="True">
+            <Node name="NetCore.Migrations" selected="True" />
+            <Node name="NetCore.Services">
+              <Node name="Svcs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="NetCore" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>_context.User.ToList()</Value>
+          <Value>_context.User.ToList()</Value>
+          <Value>_context.Users.ToList()</Value>
+          <Value>_context.Users.ToList()</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NetCore.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/Svcs/UserService.cs" relfile="NetCore.Services/Svcs/UserService.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
