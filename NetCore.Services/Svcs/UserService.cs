@@ -1,4 +1,5 @@
 ﻿//using NetCore.Data.DataModels;
+using Microsoft.EntityFrameworkCore;
 using NetCore.Data.Classes;
 using NetCore.Data.ViewModels;
 using NetCore.Services.Data;
@@ -39,10 +40,41 @@ namespace NetCore.Services.Svcs
             //};
         }
 
+        private User GetUserInfo(string userId, string password)
+        {
+            User user;
+
+            // lambda
+             user = _context.Users.Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).FirstOrDefault();
+
+            // FromSqlRaw, FromSqlInterpolated
+            // Table
+            //user = _context.Users.FromSqlRaw("SELECT UserId, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinedUtcDate FROM dbo.[User]")
+            //        .Where(u => u.UserId.Equals(userId) && u.Password.Equals(password))
+            //        .FirstOrDefault();
+
+            // View
+            //user = _context.Users.FromSqlRaw("SELECT UserId, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinedUtcDate FROM dbo.uvwUser")
+            //        .Where(u => u.UserId.Equals(userId) && u.Password.Equals(password))
+            //        .FirstOrDefault();
+
+            // Function
+            //user = _context.Users.FromSqlInterpolated($"SELECT UserId, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinedUtcDate FROM dbo.ufnUser({userId}, {password})")
+            //        .FirstOrDefault();
+
+            // Stored Procedure
+            //user = _context.Users.FromSqlInterpolated($"exec dbo.uspCheckLoginByUserId {userId}, {password}")
+            //    .AsEnumerable()
+            //    .FirstOrDefault();
+             
+            return user;
+        }
+
         private bool CheckTheUserInfo(string userId, string password)
         {
             // any : 리스트 데이터 유무체크
-            return GetUserInfos().Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).Any();
+            //return GetUserInfos().Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).Any();
+            return GetUserInfo(userId, password) != null;
         }
         #endregion
 
