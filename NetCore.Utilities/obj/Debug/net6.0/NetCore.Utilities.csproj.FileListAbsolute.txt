@@ -1,0 +1,12 @@
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/bin/Debug/net6.0/NetCore.Utilities.deps.json
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/bin/Debug/net6.0/NetCore.Utilities.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/bin/Debug/net6.0/NetCore.Utilities.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.csproj.AssemblyReference.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.AssemblyInfoInputs.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.AssemblyInfo.cs
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.csproj.CoreCompileInputs.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/refint/NetCore.Utilities.dll
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.pdb
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/ref/NetCore.Utilities.dll

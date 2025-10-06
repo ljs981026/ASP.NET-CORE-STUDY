@@ -1,4 +1,5 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/bin/Debug/net6.0/NetCore.Data.deps.json
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/bin/Debug/net6.0/NetCore.Data.runtimeconfig.json
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/bin/Debug/net6.0/NetCore.Data.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/bin/Debug/net6.0/NetCore.Data.pdb
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/NetCore.Data.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/NetCore.Data.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/refint/NetCore.Data.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/NetCore.Data.pdb
-/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/ref/NetCore.Data.dll
-/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/bin/Debug/net6.0/NetCore.Data.runtimeconfig.json
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/NetCore.Data.genruntimeconfig.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/ref/NetCore.Data.dll

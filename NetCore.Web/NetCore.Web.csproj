@@ -23,11 +23,18 @@
     <Folder Include="wwwroot\lib\jquery-validation\dist\" />
     <Folder Include="wwwroot\lib\jquery\" />
     <Folder Include="wwwroot\lib\jquery\dist\" />
+    <Folder Include="Views\Data\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NetCore.Migrations\NetCore.Migrations.csproj" />
     <ProjectReference Include="..\NetCore.Services\NetCore.Services.csproj" />
+    <ProjectReference Include="..\NetCore.Utilities\NetCore.Utilities.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Data\" />
+  </ItemGroup>
 </Project>

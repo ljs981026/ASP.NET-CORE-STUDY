@@ -12,6 +12,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using NetCore.Services.Data;
+using Microsoft.AspNetCore.DataProtection;
+using System.IO;
+using NetCore.Utilities.Utils;
 
 namespace NetCore.Web
 {
@@ -27,9 +30,10 @@ namespace NetCore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Common.SetDataProtection(services, @"/Users/jaeseok/DataProtector/", "NetCore", Enums.CryptoType.Managed);
             // ������ ������ ����ϱ� ���ؼ� ���񽺷� �����
-            // ������             ���빰
-            // IUser �������̽��� UserService Ŭ���� �ν��Ͻ��� ����
+            // 껍데기          내용물
+            // IUser 인터페이스 UserService 클래스를 받기 위해 services에 등록해야 함
             services.AddScoped<IUser, UserService>();
             // db 접속정보, 마이그레이션스 프로젝트 지정
             //services.AddDbContext<CodeFirstDbContext>(options =>

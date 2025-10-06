@@ -1,4 +1,5 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/bin/Debug/net6.0/NetCore.Migrations.deps.json
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/bin/Debug/net6.0/NetCore.Migrations.runtimeconfig.json
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/bin/Debug/net6.0/NetCore.Migrations.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/bin/Debug/net6.0/NetCore.Migrations.pdb
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/bin/Debug/net6.0/NetCore.Data.dll
@@ -14,6 +15,5 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/obj/Debug/net6.0/NetCore.Migrations.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/obj/Debug/net6.0/refint/NetCore.Migrations.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/obj/Debug/net6.0/NetCore.Migrations.pdb
-/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/obj/Debug/net6.0/ref/NetCore.Migrations.dll
-/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/bin/Debug/net6.0/NetCore.Migrations.runtimeconfig.json
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/obj/Debug/net6.0/NetCore.Migrations.genruntimeconfig.cache
+/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/obj/Debug/net6.0/ref/NetCore.Migrations.dll

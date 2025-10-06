@@ -1,4 +1,8 @@
 ﻿<Properties StartupConfiguration="{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NetCore.Utilities FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.NetCore.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="NetCore.Services/Svcs/UserService.cs">
     <Files>
       <File FileName="NetCore.Web/appsettings.json" Line="16" Column="1" />
@@ -39,13 +43,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.NetCore.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/Svcs/UserService.cs" relfile="NetCore.Services/Svcs/UserService.cs" line="35" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Services/Svcs/UserService.cs" relfile="NetCore.Services/Svcs/UserService.cs" line="35" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
