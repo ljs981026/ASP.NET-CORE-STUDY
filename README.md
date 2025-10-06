@@ -62,3 +62,11 @@ Database-First
 db를 통해 데이터를 처리할 때 어지간하면 linq방식 채택 그게 아니라면 저장 프로시저 활용하여 처리
 
 비즈니스 로직이 너무 복잡하거나 민감한 정보를 가지고있을때만 사용 + dba가 존재
+
+Day5
+
+ExecuteSql 메서드는 작업결과 int값을 return하기 때문, procedure에서 database의
+
+insert, update, delete 작업 후 select구문을 추가해도 그 값을 return 할 수 없다
+
+데이터 검색은 별도의 c# 메서드로 분리

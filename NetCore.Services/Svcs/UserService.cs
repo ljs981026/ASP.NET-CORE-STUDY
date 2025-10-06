@@ -66,7 +66,19 @@ namespace NetCore.Services.Svcs
             //user = _context.Users.FromSqlInterpolated($"exec dbo.uspCheckLoginByUserId {userId}, {password}")
             //    .AsEnumerable()
             //    .FirstOrDefault();
-             
+
+            if (user == null)
+            {
+                // 접속실패횟수에 대한 증가
+                int rowAffected;
+
+                // Sql문 직접 작성
+                // rowAffected = _context.Database.ExecuteSqlInterpolated($"Update dbo.[User] SET AccessFailedCount += 1 Where UserId={userId}");
+
+                // sp로 처리
+                rowAffected = _context.Database.ExecuteSqlInterpolated($"exec dbo.FailedLoginByUserId {userId}");
+            }
+
             return user;
         }
 
