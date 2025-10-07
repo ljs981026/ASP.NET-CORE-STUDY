@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Mvc;
 using NetCore.Data.ViewModels;
@@ -21,6 +22,7 @@ namespace NetCore.Web.Controllers
 
         // GET: /<controller>/
         [HttpGet]
+        [Authorize(Roles = "GeneralUser,SuperUser,SystemUser")]
         public IActionResult AES()
         {
             return View();
@@ -28,6 +30,7 @@ namespace NetCore.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "GeneralUser,SuperUser,SystemUser")]
         public IActionResult AES(AESInfo aes)
         {
             string message = string.Empty;

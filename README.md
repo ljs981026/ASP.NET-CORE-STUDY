@@ -84,3 +84,17 @@ Principal: 본인, Identity: 신원
 Authorize(Roles), ClaimTypes.Role
 
 Role: 권한(역할)
+
+Day7
+
+ClaimType.Name(UserId)
+
+=> _context.User.Identity.Name
+
+ClaimType.Role(RoleId)
+
+=> Authorize(Roles = "o, o, o")
+
+ClaimType.UserData(사용자 정의 데이터)
+
+=> RoleName, RolePriority, UserName, UserEmail

@@ -1,0 +1,20 @@
+﻿@using System.Security.Claims
+@{
+    ViewData["Title"] = "접근권한 불가입니다.";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string[] userdata = new[] { string.Empty, string.Empty, string.Empty, string.Empty };
+    if (Context.User.Claims.Any())
+    {
+        //userdata = User.FindFirst(claim => claim.Type.Equals(ClaimTypes.))
+        userdata = User.FindFirst(claim => claim.Type.Equals(ClaimTypes.UserData)).Value.Split("|");
+    }
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>@userdata[0]</div>
+<div>@userdata[1]</div>
+<div>@userdata[2]</div>
+<div>@userdata[3]</div>
+<div class="text-danger">@Html.Raw(ViewData["Message"])</div>
