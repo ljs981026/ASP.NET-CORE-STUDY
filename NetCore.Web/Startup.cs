@@ -15,6 +15,7 @@ using NetCore.Services.Data;
 using Microsoft.AspNetCore.DataProtection;
 using System.IO;
 using NetCore.Utilities.Utils;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace NetCore.Web
 {
@@ -30,6 +31,8 @@ namespace NetCore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
+
             Common.SetDataProtection(services, @"/Users/jaeseok/DataProtector/", "NetCore", Enums.CryptoType.Managed);
             // ������ ������ ����ϱ� ���ؼ� ���񽺷� �����
             // 껍데기          내용물
@@ -45,6 +48,15 @@ namespace NetCore.Web
                 ));
 
             services.AddControllersWithViews();
+
+            // 신원보증과 승인권한
+            services.AddAuthentication(defaultScheme: CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(cook => {
+                    cook.AccessDeniedPath = "/Membership/Forbidden";
+                    cook.LoginPath = "/Membership/Login";
+                });
+
+            services.AddAuthorization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +74,9 @@ namespace NetCore.Web
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            // 신원보증만
+            app.UseAuthentication();
 
             app.UseRouting();
 

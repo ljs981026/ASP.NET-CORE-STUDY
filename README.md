@@ -70,3 +70,17 @@ ExecuteSql 메서드는 작업결과 int값을 return하기 때문, procedure에
 insert, update, delete 작업 후 select구문을 추가해도 그 값을 return 할 수 없다
 
 데이터 검색은 별도의 c# 메서드로 분리
+
+Day6
+
+*신원보증
+
+ClaimsPrincipal, ClaimsIdentity
+
+Principal: 본인, Identity: 신원
+
+*허가승인
+
+Authorize(Roles), ClaimTypes.Role
+
+Role: 권한(역할)

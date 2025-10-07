@@ -88,11 +88,44 @@ namespace NetCore.Services.Svcs
             //return GetUserInfos().Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).Any();
             return GetUserInfo(userId, password) != null;
         }
+
+        private User GetUserInfo(string userId)
+        {
+            return _context.Users.Where(u => u.UserId.Equals(userId)).FirstOrDefault();
+        }
+
+        private IEnumerable<UserRolesByUser> GetUserRolesByUserInfos(string userId)
+        {
+            var userRolesByUserInfos = _context.UserRolesByUsers.Where(uru => uru.UserId.Equals(userId)).ToList();
+
+            foreach(var role in userRolesByUserInfos)
+            {
+                role.UserRole = GetUserRole(role.RoleId);
+            }
+
+            return userRolesByUserInfos.OrderByDescending(uru => uru.UserRole.RolePriority);
+        }
+
+        private UserRole GetUserRole(string roleId)
+        {
+            return _context.UserRoles.Where(ur => ur.RoleId.Equals(roleId)).FirstOrDefault();
+        }
+
         #endregion
 
         bool IUser.MatchTheUserInfo(LoginInfo login)
         {
             return CheckTheUserInfo(login.UserId, login.Password);            
+        }
+
+        User IUser.GetUserInfo(string userId)
+        {
+            return GetUserInfo(userId);
+        }
+
+        IEnumerable<UserRolesByUser> IUser.GetRolesOwnedByUser(string userId)
+        {
+            return GetUserRolesByUserInfos(userId);
         }
     }
 }

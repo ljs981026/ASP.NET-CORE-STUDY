@@ -11,7 +11,7 @@ namespace NetCore.Data.Classes
         public string RoleId { get; set; }
         public DateTime OwnedUtcDate { get; set; }
 
-        public UserRole Role { get; set; }
+        public UserRole UserRole { get; set; }
         public User User { get; set; }
     }
 }
