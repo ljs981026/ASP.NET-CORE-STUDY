@@ -45,7 +45,7 @@ namespace NetCore.Services.Svcs
             User user;
 
             // lambda
-             user = _context.Users.Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).FirstOrDefault();
+             user = _context.Users.Where(u => u.UserId.Equals(userId)).FirstOrDefault();
 
             // FromSqlRaw, FromSqlInterpolated
             // Table

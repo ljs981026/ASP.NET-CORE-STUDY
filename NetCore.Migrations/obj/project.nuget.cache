@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9qM5UnfbGuu3of2zVF0h+oj3pLCgelJiHYmZavRKiwGBj86N6uBJ3QZfBoHnIvy0g8TpG5R+KsOZSvCf81aIFQ==",
+  "dgSpecHash": "OSmIlnUESaD1IQZbqo4DL23m5zl8Hf1io1yhshsB3M3ZBOohj/rUzlYPg2LPKKKADS2N4mUTtMGLDEFpplqafA==",
   "success": true,
   "projectFilePath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Migrations/NetCore.Migrations.csproj",
   "expectedPackageFiles": [
     "/Users/jaeseok/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.0/microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
+    "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.0/microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

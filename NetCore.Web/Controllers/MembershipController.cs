@@ -24,12 +24,14 @@ namespace NetCore.Web.Controllers
         // private IUser _user = new UserService();
         // 의존성 주입 방식으로 전환 - 생성자 주입
         private IUser _user;
+        private IPasswordHasher _hasher;
         private HttpContext _context;
 
-        public MembershipController(IHttpContextAccessor accessor, IUser user)
+        public MembershipController(IHttpContextAccessor accessor, IUser user, IPasswordHasher hasher)
         {
             _context = accessor.HttpContext;
             _user = user;
+            _hasher = hasher;
         }
 
         #region private methods
@@ -86,7 +88,8 @@ namespace NetCore.Web.Controllers
                 // 서비스 개념 => 서비스 프로젝트 구성
                 // 프로젝트 분리를하여 서비스를 재사용화, 모듈화로 효율적 관리
                 //if (login.UserId.Equals(userId) && login.Password.Equals(password))
-                if (_user.MatchTheUserInfo(login))
+                //if (_user.MatchTheUserInfo(login))
+                if (_hasher.MatchTheUserInfo(login.UserId, login.Password))
                 {
                     // 시원보증과 승인권한
                     var userInfo = _user.GetUserInfo(login.UserId);

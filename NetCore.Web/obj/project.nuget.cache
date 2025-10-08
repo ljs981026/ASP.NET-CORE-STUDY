@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6Yn8IwTVj9JZo/tVGQuAhEQIWr5BABed7Zq18Rb4qy56OpuN8kIV09jTr/jJVJcICT1Y9LHIGwbbzVD2oC0LBA==",
+  "dgSpecHash": "BhIinjrYBniTGGJNjgVlj1rGh0AKwgYn7d+/D3MeV7MYlsz6y/6afFD5janx1XsSBhTYRXK8eD7XXy8refvAhA==",
   "success": true,
   "projectFilePath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/NetCore.Web.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "/Users/jaeseok/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.0/microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
+    "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.0/microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.dataprotection/6.0.0/microsoft.aspnetcore.dataprotection.6.0.0.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.dataprotection.abstractions/6.0.0/microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512",
     "/Users/jaeseok/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",

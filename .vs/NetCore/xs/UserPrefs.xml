@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{84B6D3BA-A84D-415E-A11E-5A7725E92A0E}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.NetCore.Utilities FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.NetCore.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.NetCore.Test.PasswordHasher PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="NetCore.Services/Svcs/UserService.cs">
     <Files>
