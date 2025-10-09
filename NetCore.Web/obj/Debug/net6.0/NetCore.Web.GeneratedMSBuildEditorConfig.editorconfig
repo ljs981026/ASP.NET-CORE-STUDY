@@ -5,72 +5,73 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NetCore.Web
 build_property.RootNamespace = NetCore.Web
-build_property.ProjectDir = /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/
+build_property.ProjectDir = D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web
+build_property.MSBuildProjectDirectory = D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Data/AES.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGF0YS9BRVMuY3NodG1s
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Data/AES.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxBRVMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Membership/Forbidden.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9Gb3JiaWRkZW4uY3NodG1s
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Membership/Forbidden.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFxGb3JiaWRkZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Membership/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9JbmRleC5jc2h0bWw=
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Membership/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Membership/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyc2hpcC9Mb2dpbi5jc2h0bWw=
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Membership/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Web/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/Lecture/ASP.NET-CORE-STUDY/NetCore.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -12,3 +12,17 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/NetCore.Data.pdb
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/NetCore.Data.genruntimeconfig.cache
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Data/obj/Debug/net6.0/ref/NetCore.Data.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\bin\Debug\net6.0\NetCore.Data.deps.json
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\bin\Debug\net6.0\NetCore.Data.runtimeconfig.json
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\bin\Debug\net6.0\NetCore.Data.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\bin\Debug\net6.0\NetCore.Data.pdb
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.csproj.AssemblyReference.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.AssemblyInfoInputs.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.AssemblyInfo.cs
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.csproj.CoreCompileInputs.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\refint\NetCore.Data.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.pdb
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\NetCore.Data.genruntimeconfig.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Data\obj\Debug\net6.0\ref\NetCore.Data.dll

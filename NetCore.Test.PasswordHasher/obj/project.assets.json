@@ -79,24 +79,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/jaeseok/.nuget/packages/": {}
+    "C:\\Users\\ljs98\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Test.PasswordHasher/NetCore.Test.PasswordHasher.csproj",
+      "projectUniqueName": "D:\\Lecture\\ASP.NET-CORE-STUDY\\NetCore.Test.PasswordHasher\\NetCore.Test.PasswordHasher.csproj",
       "projectName": "NetCore.Test.PasswordHasher",
-      "projectPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Test.PasswordHasher/NetCore.Test.PasswordHasher.csproj",
-      "packagesPath": "/Users/jaeseok/.nuget/packages/",
-      "outputPath": "/Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Test.PasswordHasher/obj/",
+      "projectPath": "D:\\Lecture\\ASP.NET-CORE-STUDY\\NetCore.Test.PasswordHasher\\NetCore.Test.PasswordHasher.csproj",
+      "packagesPath": "C:\\Users\\ljs98\\.nuget\\packages\\",
+      "outputPath": "D:\\Lecture\\ASP.NET-CORE-STUDY\\NetCore.Test.PasswordHasher\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/jaeseok/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ljs98\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -136,7 +146,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

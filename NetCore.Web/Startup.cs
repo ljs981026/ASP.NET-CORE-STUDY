@@ -33,7 +33,8 @@ namespace NetCore.Web
         {
             services.AddHttpContextAccessor();
 
-            Common.SetDataProtection(services, @"/Users/jaeseok/DataProtector/", "NetCore", Enums.CryptoType.Managed);
+            //Common.SetDataProtection(services, @"/Users/jaeseok/DataProtector/", "NetCore", Enums.CryptoType.Managed);
+            Common.SetDataProtection(services, @"D:\Lecture\ASP.NET-CORE-STUDY\DataProtector\", "NetCore", Enums.CryptoType.CngCbc);
             // ������ ������ ����ϱ� ���ؼ� ���񽺷� �����
             // 껍데기          내용물
             // IUser 인터페이스 UserService 클래스를 받기 위해 services에 등록해야 함

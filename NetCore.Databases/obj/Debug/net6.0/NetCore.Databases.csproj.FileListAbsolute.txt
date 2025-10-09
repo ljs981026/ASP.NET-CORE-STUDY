@@ -10,3 +10,15 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/refint/NetCore.Databases.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/NetCore.Databases.pdb
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Databases/obj/Debug/net6.0/ref/NetCore.Databases.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\bin\Debug\net6.0\NetCore.Databases.deps.json
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\bin\Debug\net6.0\NetCore.Databases.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\bin\Debug\net6.0\NetCore.Databases.pdb
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.csproj.AssemblyReference.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.AssemblyInfoInputs.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.AssemblyInfo.cs
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.csproj.CoreCompileInputs.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\refint\NetCore.Databases.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\NetCore.Databases.pdb
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Databases\obj\Debug\net6.0\ref\NetCore.Databases.dll

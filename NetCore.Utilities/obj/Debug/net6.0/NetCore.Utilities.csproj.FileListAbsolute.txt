@@ -10,3 +10,15 @@
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/refint/NetCore.Utilities.dll
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/NetCore.Utilities.pdb
 /Users/jaeseok/ASP.NET-CORE-STUDY/NetCore.Utilities/obj/Debug/net6.0/ref/NetCore.Utilities.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\bin\Debug\net6.0\NetCore.Utilities.deps.json
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\bin\Debug\net6.0\NetCore.Utilities.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\bin\Debug\net6.0\NetCore.Utilities.pdb
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.csproj.AssemblyReference.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.AssemblyInfoInputs.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.AssemblyInfo.cs
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.csproj.CoreCompileInputs.cache
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\refint\NetCore.Utilities.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\NetCore.Utilities.pdb
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Utilities\obj\Debug\net6.0\ref\NetCore.Utilities.dll
