@@ -89,7 +89,7 @@ namespace NetCore.Web.Controllers
                 // 프로젝트 분리를하여 서비스를 재사용화, 모듈화로 효율적 관리
                 //if (login.UserId.Equals(userId) && login.Password.Equals(password))
                 //if (_user.MatchTheUserInfo(login))
-                if (_hasher.MatchTheUserInfo(login.UserId, login.Password))
+                if (_user.MatchTheUserInfo(login))
                 {
                     // 시원보증과 승인권한
                     var userInfo = _user.GetUserInfo(login.UserId);
@@ -139,6 +139,46 @@ namespace NetCore.Web.Controllers
             // view로 리턴하면 로그인이 실패를 했다는 뜻이므로 모델 상태에다가 에러 모델을 하나 추가를 함
             ModelState.AddModelError(string.Empty, message);
             return View("Login", login);
+        }
+
+        [HttpGet("Register")]
+        [AllowAnonymous]
+        public IActionResult Register(string returnUrl)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+
+            return View();
+        }
+
+        [HttpPost("Register")]
+        [ValidateAntiForgeryToken]
+        [AllowAnonymous]
+        public IActionResult Register(RegisterInfo register, string returnUrl)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+
+            string message = string.Empty;
+
+            if(ModelState.IsValid)
+            {
+                // 사용자 가입 서비스
+                if (_user.RegisterUser(register) > 0)
+                {
+                    TempData["Message"] = "사용자 가입이 성공적으로 이루어졌습니다.";
+                    return RedirectToAction("Login", "Membership");
+                }
+                else
+                {
+                    message = "사용자가 가입되지 않았습니다.";
+                }
+            }
+            else
+            {
+                message = "사용자 가입을 위한 정보를 올바르게 입력하세요.";
+            }
+
+            ModelState.AddModelError(string.Empty, message);
+            return View(register);
         }
 
         [HttpGet("LogOut")]

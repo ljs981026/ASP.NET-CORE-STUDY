@@ -1,6 +1,7 @@
 ﻿//using NetCore.Data.DataModels;
 using Microsoft.EntityFrameworkCore;
 using NetCore.Data.Classes;
+//using NetCore.Data.DataModels;
 using NetCore.Data.ViewModels;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
@@ -15,10 +16,13 @@ namespace NetCore.Services.Svcs
     public class UserService : IUser
     {
         private DBFirstDbContext _context;
+        private IPasswordHasher _hasher;
 
-        public UserService(DBFirstDbContext context)
+        public UserService(DBFirstDbContext context, IPasswordHasher hasher)
         {
             _context = context;
+            _hasher = hasher;
+
         }
 
         #region private methods
@@ -111,11 +115,50 @@ namespace NetCore.Services.Svcs
             return _context.UserRoles.Where(ur => ur.RoleId.Equals(roleId)).FirstOrDefault();
         }
 
+        private int RegisterUser(RegisterInfo register)
+        {
+            var passwordInfo = _hasher.SetPasswordInfo(register.UserId, register.Password);
+            var utcNow = DateTime.UtcNow;
+
+            var user = new User()
+            {
+                UserId = register.UserId,
+                UserName = register.UserName,
+                UserEmail = register.UserEmail,
+                GUIDSalt = passwordInfo.GUIDSalt,
+                RNGSalt = passwordInfo.RNGSalt,
+                PasswordHash = passwordInfo.PasswordHash,
+                AccessFailedCount = 0,
+                IsMembershipWithdrawn = false,
+                JoinedUtcDate = utcNow,
+            };
+
+            var userRolesByUser = new UserRolesByUser()
+            {
+                UserId = register.UserId,
+                RoleId = "AssociateUser",
+                OwnedUtcDate = utcNow,
+            };
+
+            _context.Add(user);
+            _context.Add(userRolesByUser);
+
+            return _context.SaveChanges();
+        }
+
         #endregion
 
         bool IUser.MatchTheUserInfo(LoginInfo login)
         {
-            return CheckTheUserInfo(login.UserId, login.Password);            
+            //return CheckTheUserInfo(login.UserId, login.Password);            
+            var user = _context.Users.Where(u => u.UserId.Equals(login.UserId)).FirstOrDefault();  
+            
+            if (user == null)
+            {
+                return false;
+            }
+
+            return _hasher.CheckThePasswordInfo(login.UserId, login.Password, user.GUIDSalt, user.RNGSalt, user.PasswordHash);
         }
 
         User IUser.GetUserInfo(string userId)
@@ -126,6 +169,11 @@ namespace NetCore.Services.Svcs
         IEnumerable<UserRolesByUser> IUser.GetRolesOwnedByUser(string userId)
         {
             return GetUserRolesByUserInfos(userId);
+        }
+
+        int IUser.RegisterUser(RegisterInfo register)
+        {
+            return RegisterUser(register);
         }
     }
 }

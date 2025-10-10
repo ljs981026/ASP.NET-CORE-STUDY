@@ -106,3 +106,19 @@ GUID Salt: 사용자 정보의 복잡성을 위해 사용
 RNG Salt: 비밀번호해시 생성시 Salt의 복잡성을 위해 사용
 
 PasswordHash: Iterations: 100000, 45000, 25000, 10000 ...
+
+Day9
+
+Entity Framework Core
+
+데이터의 insert 작업 지원 => Add 메서드
+
+데이터 단일 건 추가
+
+_context.Add(user) 또는
+
+_context.Add<User>(user)
+
+SaveChanges 메서드
+
+_context.SaveChanges() <= 변경사항 저장

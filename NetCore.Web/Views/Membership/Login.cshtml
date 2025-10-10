@@ -7,6 +7,8 @@
 
 <h2>@ViewData["Title"]</h2>
 
+<div class="text-info">@Html.Raw(TempData["Message"])</div>
+
 <div class="row">
     <div class="col-md-4">
         <form method="Post" asp-route-returnurl="@ViewData["ReturnUrl"]" asp-controller="Membership" asp-action="Login" onsubmit="btnLogin.disabled = true; return true;"> <!-- 중복 클릭 방지 -->
