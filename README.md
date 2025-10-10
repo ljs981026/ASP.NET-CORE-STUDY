@@ -122,3 +122,17 @@ _context.Add<User>(user)
 SaveChanges 메서드
 
 _context.SaveChanges() <= 변경사항 저장
+
+데이터의 Update 작업 지원 => Update 메서드
+
+데이터 단일 건 업데이트
+
+_context.Update(userInfo) 또는
+
+_context.Update<User>(userInfo)
+
+변경할 데이터 나열
+
+userInfo.UserName = user.UserName;
+
+_context.SaveChanges() <= 변경사항 저장

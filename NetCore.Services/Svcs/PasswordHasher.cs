@@ -36,6 +36,7 @@ namespace NetCore.Services.Svcs
             return Convert.ToBase64String(salt);
         }
 
+        // 아이디와 비밀번호에 대해서 대소문자 처리
         private string GetPasswordHash(string userId, string password, string guidSalt, string rngSalt)
         {
             // derive a 256-bit subkey (use HMACSHA256 with 100,000 iterations)
@@ -43,7 +44,7 @@ namespace NetCore.Services.Svcs
             // Password d-based key derivation function 2
             // 키를 통해서 어떠한 값을 파생시키는 것 (비밀번호 값) 
             return Convert.ToBase64String(KeyDerivation.Pbkdf2(
-                password: userId + password + guidSalt,
+                password: userId.ToLower() + password.ToLower() + guidSalt,
                 salt: Encoding.UTF8.GetBytes(rngSalt),
                 prf: KeyDerivationPrf.HMACSHA512,
                 iterationCount: 100000,
