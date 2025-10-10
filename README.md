@@ -136,3 +136,19 @@ _context.Update<User>(userInfo)
 userInfo.UserName = user.UserName;
 
 _context.SaveChanges() <= 변경사항 저장
+
+Day10
+
+Entity Framework Core
+
+데이터의 Delete 작업 지원 => Remove 메서드
+
+데이터 단일 건 삭제
+
+_context.Remove(user) 또는
+
+_context.Remove<User>(user)
+
+SaveChanges 메서드
+
+_context.SaveChanges() <= 변경사항 저장
