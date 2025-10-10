@@ -152,3 +152,17 @@ _context.Remove<User>(user)
 SaveChanges 메서드
 
 _context.SaveChanges() <= 변경사항 저장
+
+DbInitializer: 초기데이터 구성을 위해 사용
+
+_context.Database.EnsureCreated
+
+Database 자동생성
+
+데이터 여러 건 추가, 업데이트, 삭제
+
+_context.User.AddRange(users)
+
+_context.User.UpdateRange(users)
+
+_context.User.RemoveRange(users)

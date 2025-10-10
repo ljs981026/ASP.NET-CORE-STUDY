@@ -38,6 +38,7 @@ namespace NetCore.Web
             // ������ ������ ����ϱ� ���ؼ� ���񽺷� �����
             // 껍데기          내용물
             // IUser 인터페이스 UserService 클래스를 받기 위해 services에 등록해야 함
+            services.AddScoped<DBFirstDbInitializer>();
             services.AddScoped<IUser, UserService>();
             services.AddScoped<IPasswordHasher, PasswordHasher>();
             // db 접속정보, 마이그레이션스 프로젝트 지정
