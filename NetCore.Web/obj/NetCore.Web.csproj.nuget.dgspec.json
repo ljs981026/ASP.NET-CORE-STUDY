@@ -385,6 +385,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.18, )"
+            },
+            "NetEscapades.Extensions.Logging.RollingFile": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [

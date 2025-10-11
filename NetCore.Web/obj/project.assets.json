@@ -2426,6 +2426,22 @@
           }
         }
       },
+      "NetEscapades.Extensions.Logging.RollingFile/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/NetEscapades.Extensions.Logging.RollingFile.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/NetEscapades.Extensions.Logging.RollingFile.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
@@ -6529,6 +6545,21 @@
         "version.txt"
       ]
     },
+    "NetEscapades.Extensions.Logging.RollingFile/2.5.0": {
+      "sha512": "8tX6HIRGIpLZLHKzPYeaGxVgd/ZwqV/DeoJMM8qq1TZFy3K0vn3YjmeNxs0pdNMqce4XoW6wPzVnzu/eKw3pDQ==",
+      "type": "package",
+      "path": "netescapades.extensions.logging.rollingfile/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/NetEscapades.Extensions.Logging.RollingFile.dll",
+        "lib/netcoreapp3.0/NetEscapades.Extensions.Logging.RollingFile.xml",
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll",
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.xml",
+        "netescapades.extensions.logging.rollingfile.2.5.0.nupkg.sha512",
+        "netescapades.extensions.logging.rollingfile.nuspec"
+      ]
+    },
     "NETStandard.Library/2.0.1": {
       "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
@@ -9090,7 +9121,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.18",
       "NetCore.Migrations >= 1.0.0",
       "NetCore.Services >= 1.0.0",
-      "NetCore.Utilities >= 1.0.0"
+      "NetCore.Utilities >= 1.0.0",
+      "NetEscapades.Extensions.Logging.RollingFile >= 2.5.0"
     ]
   },
   "packageFolders": {
@@ -9165,6 +9197,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.18, )"
+          },
+          "NetEscapades.Extensions.Logging.RollingFile": {
+            "target": "Package",
+            "version": "[2.5.0, )"
           }
         },
         "imports": [

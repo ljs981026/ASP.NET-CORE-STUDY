@@ -1,0 +1,154 @@
+2025-10-11 17:33:48.953 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 17:33:48.979 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 17:33:48.981 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 17:38:41.639 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 17:38:41.652 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 17:38:41.654 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 17:42:47.636 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 17:42:47.649 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 17:42:47.651 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 17:47:07.580 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 6.0.0 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-10-11 17:47:07.926 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-10-11 17:47:07.984 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (42ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-10-11 17:47:08.295 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 17:47:08.304 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 17:47:08.308 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 17:47:08.478 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 17:47:08.480 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 17:47:08.481 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 17:47:08.495 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/ - -
+2025-10-11 17:47:08.559 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 17:47:08.571 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2025-10-11 17:47:08.581 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2025-10-11 17:47:08.735 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 151.4182ms.
+2025-10-11 17:47:08.742 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 168.0161ms
+2025-10-11 17:47:08.744 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 17:47:08.788 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/ - - - 200 - text/html;+charset=utf-8 294.7809ms
+2025-10-11 17:47:08.811 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 17:47:08.812 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 17:47:08.822 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.8117ms
+2025-10-11 17:47:08.854 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.7588ms
+2025-10-11 17:47:13.049 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/AES - -
+2025-10-11 17:47:13.057 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (GeneralUser|SuperUser|SystemUser)
+2025-10-11 17:47:13.063 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was forbidden.
+2025-10-11 17:47:13.065 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/AES - - - 302 - - 16.0651ms
+2025-10-11 17:47:13.070 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Membership/Forbidden?ReturnUrl=%2FData%2FAES - -
+2025-10-11 17:47:13.074 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Forbidden (NetCore.Web)'
+2025-10-11 17:47:13.084 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Forbidden", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Forbidden(Microsoft.Extensions.Logging.ILogger`1[NetCore.Web.Controllers.MembershipController]) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2025-10-11 17:47:13.102 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Forbidden.
+2025-10-11 17:47:13.113 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Forbidden executed in 11.999ms.
+2025-10-11 17:47:13.115 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Forbidden (NetCore.Web) in 29.3252ms
+2025-10-11 17:47:13.116 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Forbidden (NetCore.Web)'
+2025-10-11 17:47:13.121 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Membership/Forbidden?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 50.2854ms
+2025-10-11 17:47:13.133 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 17:47:13.139 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 17:47:13.142 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1.9056ms
+2025-10-11 17:47:13.166 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.5814ms
+2025-10-11 17:51:19.479 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 6.0.0 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-10-11 17:51:19.837 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-10-11 17:51:19.890 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-10-11 17:51:20.197 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 17:51:20.209 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 17:51:20.212 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 17:51:20.388 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 17:51:20.390 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 17:51:20.391 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 17:51:20.407 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/ - -
+2025-10-11 17:51:20.476 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 17:51:20.487 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2025-10-11 17:51:20.499 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2025-10-11 17:51:20.661 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 159.045ms.
+2025-10-11 17:51:20.669 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 178.2641ms
+2025-10-11 17:51:20.671 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 17:51:20.716 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/ - - - 200 - text/html;+charset=utf-8 309.9395ms
+2025-10-11 17:51:20.737 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 17:51:20.738 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 17:51:20.747 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.5812ms
+2025-10-11 17:51:20.779 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.1297ms
+2025-10-11 17:51:25.738 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/AES - -
+2025-10-11 17:51:25.747 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (GeneralUser|SuperUser|SystemUser)
+2025-10-11 17:51:25.752 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was forbidden.
+2025-10-11 17:51:25.755 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/AES - - - 302 - - 16.0788ms
+2025-10-11 17:51:25.757 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Membership/Forbidden?ReturnUrl=%2FData%2FAES - -
+2025-10-11 17:51:25.760 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Forbidden (NetCore.Web)'
+2025-10-11 17:51:25.771 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Forbidden", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Forbidden(Microsoft.Extensions.Logging.ILogger`1[NetCore.Web.Controllers.MembershipController]) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2025-10-11 17:51:25.789 +09:00 [Information] NetCore.Web.Controllers.MembershipController: Forbidden 메서드.권한이 없는 사람이 페이지에 접근 에러 처리.returnUrl : localhost:44305/Data/AES
+2025-10-11 17:51:25.791 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Forbidden.
+2025-10-11 17:51:25.802 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Forbidden executed in 10.7537ms.
+2025-10-11 17:51:25.804 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Forbidden (NetCore.Web) in 30.967ms
+2025-10-11 17:51:25.805 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Forbidden (NetCore.Web)'
+2025-10-11 17:51:25.810 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Membership/Forbidden?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 53.5207ms
+2025-10-11 17:51:25.822 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 17:51:25.828 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 17:51:25.834 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.6319ms
+2025-10-11 17:51:25.863 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.8032ms

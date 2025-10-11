@@ -30,6 +30,13 @@ namespace NetCore.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(builder => builder.AddFile(options =>
+                {
+                    options.LogDirectory = "Logs";          // 로그저장폴더
+                    options.FileName = "log-";              // 로그파일접두어. => ex) log-20250101.text
+                    options.FileSizeLimit = null;           // 로그파일 사이즈 제한(기본 10MB)
+                    options.RetainedFileCountLimit = null;  // 로그파일 보유개수(기본 2개)
+                }))
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

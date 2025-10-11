@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8xtsvnqRBiWImq4YWcIafhe91QbYQ+uJCToy7D7X6PECKfcQPPx7qWjRPzkHagbdJOFjYY8pvNiJs9MDIR8T1A==",
+  "dgSpecHash": "O5/VOe1/YRjRTsfakTS6lJrqKKak8SR7sg1v0i1/rHXxKlKOx/M6yGuMa66ELuBAOah2NEzB9ahrTWLmL4P6Tg==",
   "success": true,
   "projectFilePath": "D:\\Lecture\\ASP.NET-CORE-STUDY\\NetCore.Web\\NetCore.Web.csproj",
   "expectedPackageFiles": [
@@ -124,6 +124,7 @@
     "C:\\Users\\ljs98\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\6.0.18\\microsoft.visualstudio.web.codegenerators.mvc.6.0.18.nupkg.sha512",
     "C:\\Users\\ljs98\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ljs98\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\ljs98\\.nuget\\packages\\netescapades.extensions.logging.rollingfile\\2.5.0\\netescapades.extensions.logging.rollingfile.2.5.0.nupkg.sha512",
     "C:\\Users\\ljs98\\.nuget\\packages\\netstandard.library\\2.0.1\\netstandard.library.2.0.1.nupkg.sha512",
     "C:\\Users\\ljs98\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\ljs98\\.nuget\\packages\\nuget.common\\6.9.1\\nuget.common.6.9.1.nupkg.sha512",

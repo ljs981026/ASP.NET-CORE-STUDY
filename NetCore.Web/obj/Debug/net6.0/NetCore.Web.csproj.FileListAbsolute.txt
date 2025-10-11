@@ -637,3 +637,4 @@ D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\bin\Debug\net6.0\zh-CN\Humanizer.resou
 D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\bin\Debug\net6.0\zh-Hans\Humanizer.resources.dll
 D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
 D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\bin\Debug\net6.0\NetEscapades.Extensions.Logging.RollingFile.dll

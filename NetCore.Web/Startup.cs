@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.DataProtection;
 using System.IO;
 using NetCore.Utilities.Utils;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Logging;
 
 namespace NetCore.Web
 {
@@ -49,6 +50,14 @@ namespace NetCore.Web
             services.AddDbContext<DBFirstDbContext>(options =>
                 options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DBFirstDBConnection")
                 ));
+
+            // Logging
+            services.AddLogging(builder =>
+            {
+                builder.AddConfiguration(Configuration.GetSection(key: "Logging"));
+                builder.AddConsole();
+                builder.AddDebug();
+            });
 
             services.AddControllersWithViews();
 

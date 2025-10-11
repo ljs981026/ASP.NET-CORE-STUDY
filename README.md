@@ -166,3 +166,17 @@ _context.User.AddRange(users)
 _context.User.UpdateRange(users)
 
 _context.User.RemoveRange(users)
+
+사용 메서드 => 로그파일에 기록
+
+logger.LogCritical("") => [Critical]
+
+logger.LogDebug("") => [Debug]
+
+logger.LogError("") => [Error]
+
+logger.LogInformation("") => [Information]
+
+logger.LogTrace("") => [Trace]
+
+logger.LogWarning("") => [Warning]
