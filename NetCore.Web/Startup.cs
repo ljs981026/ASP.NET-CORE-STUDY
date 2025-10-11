@@ -69,6 +69,17 @@ namespace NetCore.Web
                 });
 
             services.AddAuthorization();
+
+            // 세션을 저장할 캐쉬메모리 등록
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".NetCore.Session";
+                // 세션의 제한시간
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // 기본값은 20분
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -93,6 +104,9 @@ namespace NetCore.Web
             app.UseRouting();
 
             app.UseAuthorization();
+
+            // 세션 지정
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

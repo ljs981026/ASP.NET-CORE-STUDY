@@ -152,3 +152,1028 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2025-10-11 17:51:25.828 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
 2025-10-11 17:51:25.834 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.6319ms
 2025-10-11 17:51:25.863 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.8032ms
+2025-10-11 18:38:13.221 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 6.0.0 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-10-11 18:38:13.599 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-10-11 18:38:13.723 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (106ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-10-11 18:38:14.034 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:38:14.043 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:38:14.048 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:38:14.268 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 18:38:14.271 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 18:38:14.273 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 18:38:14.290 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/ - -
+2025-10-11 18:38:14.344 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:38:14.372 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:38:14.385 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2025-10-11 18:38:14.400 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2025-10-11 18:38:14.566 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 164.1424ms.
+2025-10-11 18:38:14.574 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 184.8563ms
+2025-10-11 18:38:14.577 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:38:14.630 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/ - - - 200 - text/html;+charset=utf-8 340.3979ms
+2025-10-11 18:38:14.653 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:38:14.655 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:38:14.666 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.4001ms
+2025-10-11 18:38:14.699 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.5941ms
+2025-10-11 18:38:15.836 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:38:15.838 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:38:15.843 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:38:15.845 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:38:29.929 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:38:29.954 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 25.6025ms.
+2025-10-11 18:38:29.955 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 14109.0041ms
+2025-10-11 18:38:29.957 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:38:29.974 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:38:29.980 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 14142.1667ms
+2025-10-11 18:38:29.984 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:38:30.012 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2803ms
+2025-10-11 18:38:37.599 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:38:37.602 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:38:37.605 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:38:37.607 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:39:37.281 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:39:37.295 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 18.1329ms.
+2025-10-11 18:39:37.296 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 59688.3461ms
+2025-10-11 18:39:37.297 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:39:37.300 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:39:37.302 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 59702.9575ms
+2025-10-11 18:39:37.311 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:39:37.337 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.4191ms
+2025-10-11 18:39:56.734 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:39:56.736 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:39:56.737 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:39:56.739 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:40:08.211 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:40:08.217 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 8.9253ms.
+2025-10-11 18:40:08.218 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 11478.1866ms
+2025-10-11 18:40:08.219 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:40:08.224 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:40:08.226 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 11491.7954ms
+2025-10-11 18:40:08.239 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:40:08.262 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.8416ms
+2025-10-11 18:40:10.096 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:40:10.098 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:40:10.099 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:40:10.101 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:40:10.102 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:40:10.109 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 7.2934ms.
+2025-10-11 18:40:10.110 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 8.7325ms
+2025-10-11 18:40:10.112 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:40:10.115 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:40:10.117 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 20.1513ms
+2025-10-11 18:40:10.124 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:40:10.147 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.8830ms
+2025-10-11 18:41:01.014 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:01.016 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:01.018 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:01.019 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:01.023 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:01.038 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 17.339ms.
+2025-10-11 18:41:01.040 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 19.2523ms
+2025-10-11 18:41:01.042 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:01.046 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:01.048 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 33.2683ms
+2025-10-11 18:41:01.058 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:01.090 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.0921ms
+2025-10-11 18:41:01.104 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/favicon.ico - -
+2025-10-11 18:41:01.111 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /favicon.ico was not modified
+2025-10-11 18:41:01.115 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/favicon.ico - - - 304 - image/x-icon 11.3835ms
+2025-10-11 18:41:02.104 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:02.107 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:02.111 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 6.7158ms
+2025-10-11 18:41:02.261 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2025-10-11 18:41:02.263 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2025-10-11 18:41:02.378 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: 'D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map'
+2025-10-11 18:41:02.386 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2025-10-11 18:41:02.395 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 200 625953 text/plain 132.0200ms
+2025-10-11 18:41:02.398 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 311949 text/plain 137.4465ms
+2025-10-11 18:41:04.832 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:04.834 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:04.836 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:04.838 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:04.840 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:04.846 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.0164ms.
+2025-10-11 18:41:04.848 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.9842ms
+2025-10-11 18:41:04.849 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:04.852 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:04.855 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 22.3462ms
+2025-10-11 18:41:04.865 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:04.868 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:04.871 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:04.873 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 5.0504ms
+2025-10-11 18:41:04.895 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0631ms
+2025-10-11 18:41:05.363 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:05.365 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:05.366 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:05.368 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:05.369 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:05.375 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.5887ms.
+2025-10-11 18:41:05.376 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.1696ms
+2025-10-11 18:41:05.378 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:05.380 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:05.382 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 19.9445ms
+2025-10-11 18:41:05.394 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:05.396 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:05.398 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:05.405 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 11.1380ms
+2025-10-11 18:41:05.426 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2945ms
+2025-10-11 18:41:05.806 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:05.808 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:05.809 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:05.811 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:05.812 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:05.818 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.4786ms.
+2025-10-11 18:41:05.820 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.3362ms
+2025-10-11 18:41:05.822 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:05.825 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:05.827 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 21.2357ms
+2025-10-11 18:41:05.838 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:05.840 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:05.843 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:05.845 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 6.7928ms
+2025-10-11 18:41:05.871 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.3589ms
+2025-10-11 18:41:06.169 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:06.172 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:06.174 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:06.175 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:06.177 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:06.182 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.8316ms.
+2025-10-11 18:41:06.184 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.4215ms
+2025-10-11 18:41:06.185 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:06.189 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:06.191 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 21.3645ms
+2025-10-11 18:41:06.201 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:06.203 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:06.206 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:06.209 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 7.2522ms
+2025-10-11 18:41:06.234 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9404ms
+2025-10-11 18:41:06.497 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:06.499 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:06.501 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:06.503 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:06.504 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:06.510 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.6856ms.
+2025-10-11 18:41:06.512 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.3741ms
+2025-10-11 18:41:06.513 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:06.517 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:06.519 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 21.4588ms
+2025-10-11 18:41:06.531 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:06.533 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:06.535 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:06.537 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 5.9328ms
+2025-10-11 18:41:06.561 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.4428ms
+2025-10-11 18:41:18.221 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:18.223 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:18.225 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:18.227 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:18.229 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:18.235 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.0709ms.
+2025-10-11 18:41:18.237 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.7724ms
+2025-10-11 18:41:18.239 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:18.242 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:18.244 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 22.3198ms
+2025-10-11 18:41:18.256 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:18.258 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:18.260 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:18.263 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 7.1831ms
+2025-10-11 18:41:18.287 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.4055ms
+2025-10-11 18:41:18.600 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:41:18.603 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:18.605 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:18.606 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:41:18.608 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:41:18.613 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.5459ms.
+2025-10-11 18:41:18.615 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.2775ms
+2025-10-11 18:41:18.617 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:41:18.620 +09:00 [Warning] Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware: Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2025-10-11 18:41:18.622 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 21.2089ms
+2025-10-11 18:41:18.635 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:41:18.637 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:41:18.641 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:41:18.649 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 13.5865ms
+2025-10-11 18:41:18.676 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.7558ms
+2025-10-11 18:42:06.670 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 6.0.0 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-10-11 18:42:07.026 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-10-11 18:42:07.092 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-10-11 18:42:07.385 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:42:07.395 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:42:07.400 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:42:07.598 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 18:42:07.601 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 18:42:07.602 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 18:42:07.617 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/ - -
+2025-10-11 18:42:07.676 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:07.709 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:42:07.723 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2025-10-11 18:42:07.736 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2025-10-11 18:42:07.896 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 158.5552ms.
+2025-10-11 18:42:07.905 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 178.2166ms
+2025-10-11 18:42:07.907 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:42:07.963 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/ - - - 200 - text/html;+charset=utf-8 344.1845ms
+2025-10-11 18:42:08.019 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:08.023 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:08.033 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 21.2334ms
+2025-10-11 18:42:08.068 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.9082ms
+2025-10-11 18:42:08.300 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:08.304 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:08.310 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 9.4935ms
+2025-10-11 18:42:09.730 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:42:09.733 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:09.735 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:09.737 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:09.748 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:09.763 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 15.74ms.
+2025-10-11 18:42:09.764 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 26.1636ms
+2025-10-11 18:42:09.766 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:09.768 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 38.3110ms
+2025-10-11 18:42:09.788 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:09.793 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:09.795 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:09.800 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:09.803 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.7053ms
+2025-10-11 18:42:09.811 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 16.4168ms
+2025-10-11 18:42:09.841 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.1896ms
+2025-10-11 18:42:10.742 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:10.744 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:10.746 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:10.748 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:10.750 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:10.757 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.7293ms.
+2025-10-11 18:42:10.758 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 8.5643ms
+2025-10-11 18:42:10.759 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:10.762 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 20.4618ms
+2025-10-11 18:42:10.778 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:10.780 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:10.782 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:10.784 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:10.786 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.0266ms
+2025-10-11 18:42:10.788 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.6332ms
+2025-10-11 18:42:10.812 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.5090ms
+2025-10-11 18:42:11.294 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:11.297 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:11.298 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:11.300 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:11.302 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:11.309 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 7.0863ms.
+2025-10-11 18:42:11.310 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 8.8313ms
+2025-10-11 18:42:11.311 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:11.314 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 20.3992ms
+2025-10-11 18:42:11.328 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:11.330 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:11.332 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:11.343 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:11.346 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 14.5481ms
+2025-10-11 18:42:11.395 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 67.2847ms
+2025-10-11 18:42:11.417 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.6911ms
+2025-10-11 18:42:11.705 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:11.707 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:11.708 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:11.710 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:11.711 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:11.717 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.3876ms.
+2025-10-11 18:42:11.719 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.9349ms
+2025-10-11 18:42:11.720 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:11.723 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 19.1377ms
+2025-10-11 18:42:11.738 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:11.740 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:11.742 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:11.744 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:11.747 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.9364ms
+2025-10-11 18:42:11.749 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.3963ms
+2025-10-11 18:42:11.772 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.8914ms
+2025-10-11 18:42:12.128 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:12.130 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:12.131 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:12.133 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:12.134 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:12.140 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.4949ms.
+2025-10-11 18:42:12.141 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.1366ms
+2025-10-11 18:42:12.143 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:12.146 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.0002ms
+2025-10-11 18:42:12.159 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:12.161 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:12.163 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:12.165 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:12.170 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 10.6399ms
+2025-10-11 18:42:12.172 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.8091ms
+2025-10-11 18:42:12.194 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.6982ms
+2025-10-11 18:42:12.545 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:12.548 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:12.549 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:12.551 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:12.553 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:12.558 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.827ms.
+2025-10-11 18:42:12.560 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.6093ms
+2025-10-11 18:42:12.562 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:12.565 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 19.4741ms
+2025-10-11 18:42:12.580 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:12.581 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:12.583 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:12.586 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:12.589 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.0467ms
+2025-10-11 18:42:12.595 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 12.6849ms
+2025-10-11 18:42:12.619 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.5238ms
+2025-10-11 18:42:12.947 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:12.949 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:12.951 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:12.952 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:12.954 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:12.959 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.3136ms.
+2025-10-11 18:42:12.961 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.0476ms
+2025-10-11 18:42:12.962 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:12.965 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.3300ms
+2025-10-11 18:42:12.978 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:12.979 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:12.981 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:12.982 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:12.985 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.5647ms
+2025-10-11 18:42:12.987 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.9948ms
+2025-10-11 18:42:13.011 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.2017ms
+2025-10-11 18:42:13.363 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:13.366 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:13.368 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:13.369 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:13.371 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:13.376 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.5754ms.
+2025-10-11 18:42:13.378 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.1124ms
+2025-10-11 18:42:13.379 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:13.382 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 19.5723ms
+2025-10-11 18:42:13.395 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:13.397 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:13.399 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:13.400 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:13.403 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.0218ms
+2025-10-11 18:42:13.406 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 10.5529ms
+2025-10-11 18:42:13.429 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.1745ms
+2025-10-11 18:42:13.691 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:13.693 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:13.694 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:13.696 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:13.697 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:13.703 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.0372ms.
+2025-10-11 18:42:13.704 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.648ms
+2025-10-11 18:42:13.706 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:13.709 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.1070ms
+2025-10-11 18:42:13.721 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:13.723 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:13.725 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:13.727 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:13.729 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.4358ms
+2025-10-11 18:42:13.731 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.5743ms
+2025-10-11 18:42:13.755 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.4596ms
+2025-10-11 18:42:14.002 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:14.005 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:14.006 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:14.008 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:14.009 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:14.015 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.636ms.
+2025-10-11 18:42:14.016 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.204ms
+2025-10-11 18:42:14.018 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:14.022 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 19.1308ms
+2025-10-11 18:42:14.036 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:14.038 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:14.040 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:14.042 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:14.044 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.1822ms
+2025-10-11 18:42:14.047 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.4185ms
+2025-10-11 18:42:14.070 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.4468ms
+2025-10-11 18:42:14.200 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:14.202 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:14.204 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:14.206 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:14.208 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:14.214 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.4736ms.
+2025-10-11 18:42:14.216 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 8.2704ms
+2025-10-11 18:42:14.217 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:14.220 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 20.1565ms
+2025-10-11 18:42:14.235 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:14.236 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:14.239 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:14.241 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:14.243 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.4825ms
+2025-10-11 18:42:14.246 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 11.4574ms
+2025-10-11 18:42:14.269 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.2923ms
+2025-10-11 18:42:14.889 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:14.891 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:14.893 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:14.894 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:14.896 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:14.901 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.4296ms.
+2025-10-11 18:42:14.903 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.1223ms
+2025-10-11 18:42:14.904 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:14.907 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.1910ms
+2025-10-11 18:42:14.921 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:14.923 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:14.925 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:14.927 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:14.929 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.3413ms
+2025-10-11 18:42:14.932 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.1094ms
+2025-10-11 18:42:14.954 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.8219ms
+2025-10-11 18:42:15.177 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:15.179 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:15.180 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:15.181 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:15.183 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:15.189 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.5952ms.
+2025-10-11 18:42:15.190 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.4209ms
+2025-10-11 18:42:15.192 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:15.196 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.5783ms
+2025-10-11 18:42:15.212 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:15.214 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:15.216 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:15.218 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:15.221 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.4781ms
+2025-10-11 18:42:15.223 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.5097ms
+2025-10-11 18:42:15.245 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.2167ms
+2025-10-11 18:42:15.468 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:15.470 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:15.472 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:15.473 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:15.475 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:15.480 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.7763ms.
+2025-10-11 18:42:15.482 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.2395ms
+2025-10-11 18:42:15.483 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:15.486 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.9788ms
+2025-10-11 18:42:15.501 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:15.503 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:15.505 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:15.507 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:15.509 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 9.3829ms
+2025-10-11 18:42:15.511 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.9875ms
+2025-10-11 18:42:15.535 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.2486ms
+2025-10-11 18:42:15.905 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:15.907 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:15.908 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:15.910 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:15.911 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:15.916 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 4.8915ms.
+2025-10-11 18:42:15.918 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.3182ms
+2025-10-11 18:42:15.920 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:15.923 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.9928ms
+2025-10-11 18:42:15.936 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:15.938 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:15.940 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:15.942 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:15.944 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.0368ms
+2025-10-11 18:42:15.946 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.8197ms
+2025-10-11 18:42:15.969 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.3284ms
+2025-10-11 18:42:16.290 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:42:16.292 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:16.294 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:16.295 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:42:16.297 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:42:16.302 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 4.7464ms.
+2025-10-11 18:42:16.303 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.6188ms
+2025-10-11 18:42:16.305 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:42:16.308 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 200 - text/html;+charset=utf-8 18.0221ms
+2025-10-11 18:42:16.322 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:42:16.324 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:42:16.326 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:42:16.329 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 6.6875ms
+2025-10-11 18:42:16.330 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:42:16.334 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.5459ms
+2025-10-11 18:42:16.355 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.4609ms
+2025-10-11 18:45:17.755 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 6.0.0 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-10-11 18:45:18.100 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-10-11 18:45:18.160 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (44ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-10-11 18:45:18.465 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:45:18.480 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:45:18.487 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:45:18.654 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 18:45:18.656 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 18:45:18.657 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 18:45:18.672 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/ - -
+2025-10-11 18:45:18.718 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:45:18.748 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:45:18.759 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2025-10-11 18:45:18.769 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2025-10-11 18:45:18.907 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 135.1444ms.
+2025-10-11 18:45:18.913 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 151.4824ms
+2025-10-11 18:45:18.915 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:45:18.962 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/ - - - 200 - text/html;+charset=utf-8 290.8291ms
+2025-10-11 18:45:18.984 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:45:18.986 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:45:18.994 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.2545ms
+2025-10-11 18:45:19.027 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.3701ms
+2025-10-11 18:45:20.461 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:45:20.464 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:45:20.469 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 8.5083ms
+2025-10-11 18:45:21.002 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:45:21.006 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:45:21.008 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:45:21.011 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:45:21.023 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:45:21.040 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 17.8097ms.
+2025-10-11 18:45:21.042 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 29.9044ms
+2025-10-11 18:45:21.043 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:45:21.045 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 43.9959ms
+2025-10-11 18:45:21.063 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:45:21.065 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:45:21.069 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:45:21.071 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.3910ms
+2025-10-11 18:45:21.080 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:45:21.084 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 14.5305ms
+2025-10-11 18:45:21.108 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.3461ms
+2025-10-11 18:45:22.244 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:45:22.246 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:45:22.249 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:45:22.250 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:45:22.252 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 405 - - 8.0282ms
+2025-10-11 18:46:34.985 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:34.988 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:35.006 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:35.013 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 14.6710ms
+2025-10-11 18:46:35.032 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 34.0101ms
+2025-10-11 18:46:39.843 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/data/cart - -
+2025-10-11 18:46:39.845 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:39.847 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:39.848 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:46:39.850 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:46:39.855 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.1474ms.
+2025-10-11 18:46:39.856 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.6989ms
+2025-10-11 18:46:39.858 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:39.861 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/data/cart - - - 200 - text/html;+charset=utf-8 17.5957ms
+2025-10-11 18:46:39.876 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:39.878 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:46:39.879 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:39.882 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:39.884 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.6776ms
+2025-10-11 18:46:39.887 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 9.7190ms
+2025-10-11 18:46:39.910 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.3690ms
+2025-10-11 18:46:42.192 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:46:42.194 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:42.196 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:42.197 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:46:42.198 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:46:42.204 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.3554ms.
+2025-10-11 18:46:42.205 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.6338ms
+2025-10-11 18:46:42.207 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:42.210 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 17.2440ms
+2025-10-11 18:46:42.225 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:42.227 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:42.229 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:46:42.231 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:42.232 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.1621ms
+2025-10-11 18:46:42.234 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 9.3104ms
+2025-10-11 18:46:42.258 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.9264ms
+2025-10-11 18:46:43.729 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/data/cart - -
+2025-10-11 18:46:43.731 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:43.733 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:43.734 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:46:43.735 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:46:43.741 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.5181ms.
+2025-10-11 18:46:43.742 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.1203ms
+2025-10-11 18:46:43.744 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:43.749 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/data/cart - - - 200 - text/html;+charset=utf-8 20.3131ms
+2025-10-11 18:46:43.763 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:43.764 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:43.766 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:43.768 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 5.1726ms
+2025-10-11 18:46:43.769 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.1078ms
+2025-10-11 18:46:44.509 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/data/cart - -
+2025-10-11 18:46:44.511 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:44.512 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:44.514 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:46:44.516 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:46:44.522 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.473ms.
+2025-10-11 18:46:44.523 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.9215ms
+2025-10-11 18:46:44.525 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:44.528 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/data/cart - - - 200 - text/html;+charset=utf-8 18.4830ms
+2025-10-11 18:46:44.541 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:44.543 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:46:44.547 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:44.549 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:44.553 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 11.1627ms
+2025-10-11 18:46:44.555 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.9519ms
+2025-10-11 18:46:44.579 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.1009ms
+2025-10-11 18:46:45.809 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:46:45.811 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:45.812 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:45.814 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:46:45.815 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:46:45.821 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.4595ms.
+2025-10-11 18:46:45.822 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.9471ms
+2025-10-11 18:46:45.823 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:45.827 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 17.8206ms
+2025-10-11 18:46:45.841 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:45.843 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:46:45.844 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:45.847 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:45.849 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.5225ms
+2025-10-11 18:46:45.851 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 9.9110ms
+2025-10-11 18:46:45.875 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.2567ms
+2025-10-11 18:46:46.669 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:46:46.671 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:46.673 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:46:46.674 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:46:46.676 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 405 - - 7.1805ms
+2025-10-11 18:46:48.043 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/data/cart - -
+2025-10-11 18:46:48.046 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:48.048 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:48.049 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:46:48.051 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:46:48.058 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.8814ms.
+2025-10-11 18:46:48.060 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 8.7373ms
+2025-10-11 18:46:48.063 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:46:48.066 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/data/cart - - - 200 - text/html;+charset=utf-8 22.9910ms
+2025-10-11 18:46:48.086 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:46:48.089 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:46:48.094 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 5.7486ms
+2025-10-11 18:46:48.097 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:46:48.103 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.8342ms
+2025-10-11 18:47:08.833 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/data/cart application/x-www-form-urlencoded 225
+2025-10-11 18:47:08.836 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:47:08.837 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:47:08.839 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:47:08.840 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/data/cart application/x-www-form-urlencoded 225 - 405 - - 7.1507ms
+2025-10-11 18:47:10.286 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:47:10.289 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:47:10.291 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 4.7839ms
+2025-10-11 18:47:10.298 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:47:10.302 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.2800ms
+2025-10-11 18:47:12.445 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:47:12.447 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:47:12.449 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:47:12.450 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:47:12.451 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:47:12.457 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.2751ms.
+2025-10-11 18:47:12.458 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.6816ms
+2025-10-11 18:47:12.460 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:47:12.463 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 17.4791ms
+2025-10-11 18:47:12.477 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:47:12.478 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:47:12.480 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:47:12.484 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:47:12.487 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 9.9382ms
+2025-10-11 18:47:12.489 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.5013ms
+2025-10-11 18:47:12.516 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.5025ms
+2025-10-11 18:47:13.223 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:47:13.225 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:47:13.228 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:47:13.229 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:47:13.231 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 405 - - 8.1686ms
+2025-10-11 18:49:18.367 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:49:18.369 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.2183ms
+2025-10-11 18:49:18.377 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:49:18.379 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:49:18.381 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 4.2645ms
+2025-10-11 18:49:20.029 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:49:20.031 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:49:20.033 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:49:20.034 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:49:20.036 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:49:20.041 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.5233ms.
+2025-10-11 18:49:20.043 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.3193ms
+2025-10-11 18:49:20.044 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:49:20.047 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 17.8374ms
+2025-10-11 18:49:20.063 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:49:20.066 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:49:20.072 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - -
+2025-10-11 18:49:20.074 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.0034ms
+2025-10-11 18:49:20.086 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:49:20.089 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/.well-known/appspecific/com.chrome.devtools.json - - - 404 - - 21.2055ms
+2025-10-11 18:49:20.114 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.3419ms
+2025-10-11 18:49:20.868 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225
+2025-10-11 18:49:20.872 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:49:20.875 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:49:20.877 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint '405 HTTP Method Not Supported'
+2025-10-11 18:49:20.883 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/Cart application/x-www-form-urlencoded 225 - 405 - - 11.7830ms
+2025-10-11 18:52:45.232 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 6.0.0 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.0' with options: None
+2025-10-11 18:52:45.596 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-10-11 18:52:45.659 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2025-10-11 18:52:45.960 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:52:45.972 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:52:45.978 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-11 18:52:46.175 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2025-10-11 18:52:46.177 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2025-10-11 18:52:46.178 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\Lecture\ASP.NET-CORE-STUDY\NetCore.Web
+2025-10-11 18:52:46.194 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/ - -
+2025-10-11 18:52:46.242 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:46.272 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:52:46.288 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2025-10-11 18:52:46.300 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2025-10-11 18:52:46.477 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 175.321ms.
+2025-10-11 18:52:46.484 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 192.6639ms
+2025-10-11 18:52:46.486 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2025-10-11 18:52:46.535 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/ - - - 200 - text/html;+charset=utf-8 341.7234ms
+2025-10-11 18:52:46.558 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:46.560 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:46.569 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.3578ms
+2025-10-11 18:52:46.598 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.8999ms
+2025-10-11 18:52:48.273 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:48.277 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:48.280 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:48.282 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:48.293 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:48.308 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 14.9366ms.
+2025-10-11 18:52:48.309 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 25.3071ms
+2025-10-11 18:52:48.310 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:48.313 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 39.8129ms
+2025-10-11 18:52:48.326 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:48.329 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:48.331 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.0862ms
+2025-10-11 18:52:48.355 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.5508ms
+2025-10-11 18:52:49.163 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:49.166 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:49.169 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:49.172 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:49.335 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:49.336 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 162.4075ms
+2025-10-11 18:52:49.338 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:49.340 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Session started; Key:7a09aa70-5231-c6b3-b27c-d38095d7f868, Id:519e3f24-84d2-6be8-01d1-fed3eb60dd95
+2025-10-11 18:52:49.345 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 181.2258ms
+2025-10-11 18:52:49.348 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:49.350 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:49.351 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:49.353 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:49.391 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:49.397 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.8298ms.
+2025-10-11 18:52:49.398 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 43.6736ms
+2025-10-11 18:52:49.399 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:49.402 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 53.9218ms
+2025-10-11 18:52:49.415 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:49.416 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:49.418 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.8236ms
+2025-10-11 18:52:49.440 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.7519ms
+2025-10-11 18:52:50.205 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:50.207 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:50.209 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:50.210 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:50.212 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:50.213 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.899ms
+2025-10-11 18:52:50.214 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:50.216 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 10.8032ms
+2025-10-11 18:52:50.220 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:50.222 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:50.223 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:50.224 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:50.225 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:50.231 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.3705ms.
+2025-10-11 18:52:50.232 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.7795ms
+2025-10-11 18:52:50.233 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:50.236 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 15.9780ms
+2025-10-11 18:52:50.252 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:50.253 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:50.256 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.7909ms
+2025-10-11 18:52:50.278 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.0587ms
+2025-10-11 18:52:50.784 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:50.787 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:50.790 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:50.791 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:50.794 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:50.797 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 3.6541ms
+2025-10-11 18:52:50.799 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:50.801 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 18.3865ms
+2025-10-11 18:52:50.802 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:50.804 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:50.806 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:50.807 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:50.809 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:50.814 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.1085ms.
+2025-10-11 18:52:50.816 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.636ms
+2025-10-11 18:52:50.817 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:50.821 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 18.1205ms
+2025-10-11 18:52:50.836 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:50.838 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:50.840 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.7364ms
+2025-10-11 18:52:50.863 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.3699ms
+2025-10-11 18:52:51.322 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:51.324 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:51.325 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:51.327 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:51.328 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:51.329 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.3205ms
+2025-10-11 18:52:51.331 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:51.332 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 10.2020ms
+2025-10-11 18:52:51.335 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:51.337 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:51.338 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:51.340 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:51.341 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:51.346 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 4.8317ms.
+2025-10-11 18:52:51.348 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.389ms
+2025-10-11 18:52:51.349 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:51.353 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 17.6668ms
+2025-10-11 18:52:51.365 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:51.366 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:51.369 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.8722ms
+2025-10-11 18:52:51.392 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2374ms
+2025-10-11 18:52:51.845 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:51.847 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:51.848 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:51.849 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:51.851 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:51.852 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.5819ms
+2025-10-11 18:52:51.853 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:51.855 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 10.4449ms
+2025-10-11 18:52:51.857 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:51.859 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:51.860 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:51.861 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:51.863 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:51.868 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.2652ms.
+2025-10-11 18:52:51.870 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.9195ms
+2025-10-11 18:52:51.871 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:51.874 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 16.4497ms
+2025-10-11 18:52:51.884 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:51.886 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:51.890 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.0427ms
+2025-10-11 18:52:51.917 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.8524ms
+2025-10-11 18:52:52.377 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:52.379 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:52.380 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:52.382 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:52.383 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:52.385 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.6436ms
+2025-10-11 18:52:52.387 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:52.388 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 11.4401ms
+2025-10-11 18:52:52.391 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:52.394 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:52.395 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:52.397 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:52.398 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:52.404 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 5.4957ms.
+2025-10-11 18:52:52.405 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 7.0011ms
+2025-10-11 18:52:52.407 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:52.409 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 18.3612ms
+2025-10-11 18:52:52.421 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:52.423 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:52.426 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.6826ms
+2025-10-11 18:52:52.448 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3127ms
+2025-10-11 18:52:52.939 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/RemoveCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:52.941 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:52.942 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web)'
+2025-10-11 18:52:52.945 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "RemoveCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:52.947 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:52.949 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web) in 2.5258ms
+2025-10-11 18:52:52.951 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web)'
+2025-10-11 18:52:52.953 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/RemoveCart application/x-www-form-urlencoded 225 - 302 - - 14.0667ms
+2025-10-11 18:52:52.955 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:52.957 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:52.958 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:52.960 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:52.962 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:52.971 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 9.6579ms.
+2025-10-11 18:52:52.973 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 11.3439ms
+2025-10-11 18:52:52.974 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:52.977 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 21.9981ms
+2025-10-11 18:52:52.988 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:52.989 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:52.992 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.5230ms
+2025-10-11 18:52:53.015 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.2484ms
+2025-10-11 18:52:54.135 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225
+2025-10-11 18:52:54.138 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:54.139 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:54.140 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:54.141 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2025-10-11 18:52:54.143 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.4388ms
+2025-10-11 18:52:54.144 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2025-10-11 18:52:54.146 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 POST https://localhost:44305/Data/AddCart application/x-www-form-urlencoded 225 - 302 - - 10.7077ms
+2025-10-11 18:52:54.148 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/Data/Cart - -
+2025-10-11 18:52:54.150 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: Cookies was not authenticated. Failure message: Ticket expired
+2025-10-11 18:52:54.151 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:54.152 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2025-10-11 18:52:54.154 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2025-10-11 18:52:54.159 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 4.9761ms.
+2025-10-11 18:52:54.160 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 6.4527ms
+2025-10-11 18:52:54.161 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2025-10-11 18:52:54.164 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/Data/Cart - - - 200 - text/html;+charset=utf-8 16.7802ms
+2025-10-11 18:52:54.179 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_vs/browserLink - -
+2025-10-11 18:52:54.180 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - -
+2025-10-11 18:52:54.183 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.6683ms
+2025-10-11 18:52:54.205 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/2 GET https://localhost:44305/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.8491ms
